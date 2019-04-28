@@ -9,6 +9,7 @@ export default {
       <div
         class="contentContainer">
           <NavBar/>
+          <slot></slot>
       </div>
     </div>
   `
