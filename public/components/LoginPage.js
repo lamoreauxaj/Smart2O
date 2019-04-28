@@ -8,7 +8,7 @@ export default {
         <source src="../assets/video.mp4" type="video/mp4">
       </video>
       <div id="loginForm">
-        <form action="">
+        <form @submit="onSubmit()" action="">
           <img src="https://www.edigitalagency.com.au/wp-content/uploads/square-payments-logo-png-transparent-background-horizontal.png"/>
           <label>Username</label>
           <br>
@@ -31,6 +31,12 @@ export default {
   methods: {
     onMessageChange() {
       this.msg = 'Hello there'
+    },
+    onSubmit()
+    {
+      console.log("hi");
+      window.location.href = "http://localhost:3000/#/usage";
+      return false;
     }
   }
 }
