@@ -31,8 +31,10 @@ export default {
       
         var left = 100;
         var gauges = [0,0,0,0,0];
-        for(var i = 0;i<4;i++){
-            gauges[i] = Math.floor(Math.random() * left * .75);
+        gauges[0] = Math.floor(Math.random() * 30 + 30);
+        left -= gauges[0];
+        for(var i = 1;i<4;i++){
+            gauges[i] = Math.floor(Math.random() * left * .80);
             left -= gauges[i];
         }
         gauges[4] = left;
