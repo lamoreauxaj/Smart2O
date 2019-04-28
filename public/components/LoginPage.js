@@ -8,7 +8,7 @@ export default {
         <source src="../assets/video.mp4" type="video/mp4">
       </video>
       <div id="loginForm">
-        <form action="">
+        <form @submit="onSubmit()" action="">
           <div class="loginTitle">
             <img src="../assets/pond.png"/>
             <h1>Smart2O</h1>
@@ -34,6 +34,12 @@ export default {
   methods: {
     onMessageChange() {
       this.msg = 'Hello there'
+    },
+    onSubmit()
+    {
+      console.log("hi");
+      window.location.href = "http://localhost:3000/#/usage";
+      return false;
     }
   }
 }
