@@ -31,7 +31,7 @@ export default{
             alert('Something went wrong: ' + err);
           } else {
             console.log(data);
-            var best = Math.floor(Math.random()*1000) + 200;
+            var best = Math.floor(Math.random()*1000) + 700;
             for(var i = 0; i < N; i++)
             {
                 var row = document.createElement("DIV");
