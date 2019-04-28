@@ -12,7 +12,7 @@ export default{
     },
     mounted() {
         const maxTadpoles = 250
-        const n = Math.floor(Math.random() * maxTadpoles), v = 15, m = 10
+        const n = 5, v = 15, m = 10
         const width = document.getElementById("pondCanvas").width
         const height = document.getElementById("pondCanvas").height
         this.context = document.getElementById("pondCanvas").getContext("2d")

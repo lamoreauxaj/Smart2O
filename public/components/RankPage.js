@@ -12,7 +12,7 @@ export default {
 			    	<span class = "name">Leaderboard</span>
 			     	<span class = "sub">
 			       		<span class = "bold">
-			       			<span>#24 in Dallas</span>
+			       			<span>#2,241 in Dallas</span>
 			       		</span>
 			     	</span>
 			   	</div>
