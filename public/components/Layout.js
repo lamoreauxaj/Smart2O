@@ -16,5 +16,9 @@ export default {
           <slot></slot>
       </div>
     </div>
-  `
+  `,
+  
+  mounted(){
+      document.getElementsByClassName("userName")[0].innerHTML = localStorage.getItem("username");
+  }
 }
