@@ -39,11 +39,11 @@ export default {
         }
         gauges[4] = left;
         
-        var gauge1 = loadLiquidFillGauge("fillgauge1", gauges[0]);
-        var gauge2 = loadLiquidFillGauge("fillgauge2", gauges[1]);
-        var gauge3 = loadLiquidFillGauge("fillgauge3", gauges[2]);
-        var gauge4 = loadLiquidFillGauge("fillgauge4", gauges[3]);
-        var gauge5 = loadLiquidFillGauge("fillgauge5", gauges[4]);
+        var gauge1 = loadLiquidFillGauge("fillgauge1", 62);
+        var gauge2 = loadLiquidFillGauge("fillgauge2", 12);
+        var gauge3 = loadLiquidFillGauge("fillgauge3", 21);
+        var gauge4 = loadLiquidFillGauge("fillgauge4", 3);
+        var gauge5 = loadLiquidFillGauge("fillgauge5", 12);
         
         var randTotal = Math.floor(Math.random() * 1000);
         document.getElementById("totalUseText").innerHTML = "Total Use: " + String(randTotal) + " G used this Month";
