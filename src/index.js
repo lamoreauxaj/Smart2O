@@ -1,14 +1,26 @@
 const express = require('express')
 const path = require('path')
 const config = require('./config.js')
+const fs = require('fs');
 
 const app = express()
+
+/*const datafile = path.join(__dirname + '/../src/data.txt');
+
+var appdata = null
+
+fs.readFile(datafile, function (err, data){
+	if(err) console.log(err);
+	appdata = data;
+});
+
+console.log(appdata)*/
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname + '/../public/index.html'))
 })
 
-app.get('/login', function(req, res){
+app.get('/loginauth', function(req, res){
 	res.send(true);
 })
 
