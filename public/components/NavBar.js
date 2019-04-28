@@ -7,15 +7,15 @@ export default {
         class="navList">
         <li
           class="navElement">
-            <router-link class="navLink" to="/my-pond">Usage</router-link>
+            <router-link class="navLink" to="/usage">Usage</router-link>
           </li>
         <li
           class="navElement">
-            <router-link class="navLink" to="/my-pond">Rank</router-link>
+            <router-link class="navLink" to="/rank">Rank</router-link>
           </li>
         <li
           class="navElement">
-            <router-link class="navLink" to="/my-pond">Footprint</router-link>
+            <router-link class="navLink" to="/footprint">Footprint</router-link>
           </li>
         <li
           class="navElement">
