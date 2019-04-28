@@ -22,7 +22,7 @@ export default {
         </tr>
       </table>
             
-      <h1 class='headerText'>Total Use: 981 G this month</h1>
+      <h1 class='headerText' id='totalUseText'>Total Use: 981 G this month</h1>
       
       
     </Layout>
@@ -42,6 +42,9 @@ export default {
         var gauge3 = loadLiquidFillGauge("fillgauge3", gauges[2]);
         var gauge4 = loadLiquidFillGauge("fillgauge4", gauges[3]);
         var gauge5 = loadLiquidFillGauge("fillgauge5", gauges[4]);
+        
+        var randTotal = Math.floor(Math.random() * 1000);
+        document.getElementById("totalUseText").innerHTML = "Total Use: " + String(randTotal) + " G used this Month";
         
         /*var dataset = [ 5, 10, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12];
         var months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];

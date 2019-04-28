@@ -29,12 +29,14 @@ body {
 #pondCanvas {
     background-color: white;
     margin: 0px 20px 20px 20px;
+    background-color: lightblue;
 }
 
 #pondlayout {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: lightblue;
 }
 
 #layout {
@@ -53,7 +55,7 @@ body {
 }
 
 #gaugeRow {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .headerText {
@@ -319,4 +321,33 @@ body
   margin-right: 24px;
   font-weight: bold;
   white-space: nowrap;
+}
+
+.card {
+  border: 1px solid #d3d3d3;
+  border-radius: .25rem;
+  margin: 30px;
+}
+
+.bg-img {
+  background-size: cover;
+  min-height: 180px;
+  background-position: center;
+  background-color: #ccc;
+}
+
+.content {
+  padding: 15px;
+}
+
+.grid-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+   grid-gap: 20px;
+}
+.grid-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   grid-gap: 20px;
+
 }

@@ -1,6 +1,6 @@
 export default{
     name: "Pond",
-    template: `<div id="pondlayout">
+    template: `<div id="pondlayout" backgroundImage="http://cdn6.dissolve.com/p/D1047_18_005/D1047_18_005_0004_600.jpg">
                 <h1 id="pondscore">Score: 100</h1>
                 <canvas width="1400" height="500" id="pondCanvas"></canvas>
             </div>`,
