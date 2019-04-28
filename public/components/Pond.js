@@ -1,6 +1,6 @@
 export default{
     name: "Pond",
-    template: '<canvas width="100%" id="pondCanvas"></canvas>',
+    template: '<canvas id="pondCanvas"></canvas>',
     data() {
         return {
             tadpoles: undefined,
