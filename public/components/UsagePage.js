@@ -5,10 +5,11 @@ export default {
   components: { Layout },
   template: `
     <Layout>
-      <h5 id="testh5">Username</h5>
+      <svg id="fillgauge1" width="97%" height="250"></svg>
     </Layout>
   `,
   mounted(){
-      document.getElementById("testh5").innerHTML = localStorage.getItem("username");
+
+      var gauge1 = loadLiquidFillGauge("fillgauge1", 55);
   }
 }
