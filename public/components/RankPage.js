@@ -1,8 +1,9 @@
 import Layout from './Layout.js'
+import Leaderboard from './Leaderboard.js'
 
 export default {
   name: 'RankPage',
-  components: { Layout },
+  components: { Layout, Leaderboard},
   template: `
   	<Layout>
 		<div class="leaderboard">
@@ -19,30 +20,7 @@ export default {
 			   	<a href="/#/rank" class="button"><i class="fas fa-flag"></i></a>
 			   	<a href="/#/rank" class="button"><i class="fas fa-globe"></i></a>
 			</div>
-			 	<div class="row winner">
-			     <span class="icon"><i class="fas fa-trophy"></i></span>
-			     <span class="avatar"></span>
-			     <span class="name">Randy Goldman</span>
-			     <span class="points">25 tadpools</span>
-			   </div>
-			   <div class="row winner">
-			     <span class="icon"><i class="fas fa-trophy"></i></span>
-			     <span class="avatar"></span>
-			     <span class="name">Randy Goldman</span>
-			     <span class="points">20 tadpools</span>
-			   </div>
-			   <div class="row winner">
-			     <span class="icon"><i class="fas fa-trophy"></i></span>
-			     <span class="avatar"></span>
-			     <span class="name">Randy Goldman</span>
-			     <span class="points">10 tadpools</span>
-			   </div>
-			   <div class="row">
-			     <span class="icon">4</span>
-			     <span class="avatar"></span>
-			     <span class="name">Randy Goldman</span>
-			     <span class="points">3 tadpools</span>
-			   </div>
+			 	<Leaderboard></Leaderboard>
 			</div>
 		</div>   
     </Layout>  
