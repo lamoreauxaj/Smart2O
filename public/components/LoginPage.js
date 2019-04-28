@@ -38,6 +38,7 @@ export default {
     onSubmit()
     {
       console.log("hi");
+      localStorage.setItem("username",document.getElementById("username").value);
       window.location.href = "http://localhost:3000/#/usage";
       return false;
     }

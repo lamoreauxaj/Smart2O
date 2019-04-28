@@ -22,12 +22,15 @@ export default{
         
         var header = document.getElementById("pondscore");
         header.innerHTML = "Score: " + String(n);
-        if(n >= Math.floor(maxTadpoles * .67))
+        if(n >= Math.floor(maxTadpoles * .67)){
             header.style.color = "green"
-        else if(n >= Math.floor(maxTadpoles * .33))
+        }
+        else if(n >= Math.floor(maxTadpoles * .33)){
             header.style.color = "yellow"
-        else
+        }
+        else{
             header.style.color = "red"
+        }
         
         this.tadpoles = new Array(n).fill().map(() => ({
           vx: (Math.random() - 0.5) * v,

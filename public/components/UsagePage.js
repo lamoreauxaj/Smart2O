@@ -5,7 +5,10 @@ export default {
   components: { Layout },
   template: `
     <Layout>
-      This is a graph!
+      <h5 id="testh5">Username</h5>
     </Layout>
-  `
+  `,
+  mounted(){
+      document.getElementById("testh5").innerHTML = localStorage.getItem("username");
+  }
 }
