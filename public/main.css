@@ -246,7 +246,7 @@ body
   display: flex;
   align-items: center;
   background-color: #144D65;
-  border-bottom: 1px solid rgba(white, .2);
+  border-bottom: 1px solid rgba(255,255,255,.2);
   height: 84px;
 }
 .icon 
@@ -259,6 +259,10 @@ body
   display: flex;
   justify-content: center;
   font-weight: bold;
+  color: white;
+}
+.winner .icon
+{
   color: #FFEB3B;
 }
 .avatar 
@@ -293,9 +297,3 @@ body
   font-weight: bold;
   white-space: nowrap;
 }
-
-/*a i
-{
-  height: 32px;
-  width: 32px;
-}*/
