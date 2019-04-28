@@ -6,6 +6,26 @@ body {
   margin: 0;
 }
 
+.upperHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin: 15px 0 10px 0;
+}
+
+.userName {
+  margin-right: 10px;
+}
+
+.userAvatar {
+  border-radius: 100%;
+  width: 50px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
 #layout {
   background-color: #80a1d6;
   min-height: 100vh;
@@ -19,7 +39,7 @@ body {
 
 .contentContainer {
   width: calc(100% - 50px);
-  margin: 40px 25px 0px 25px;
+  margin: 0px 25px 0px 25px;
   background-color: white;
   min-height: 92vh;
   border-radius: 10px;
