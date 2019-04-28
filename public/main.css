@@ -180,3 +180,108 @@ body
   	left: 30%;
   	box-shadow: 10px 10px 5px 0px rgba(0,0,0,.75);
 }
+
+.leaderboard 
+{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.cover 
+{
+  position: relative;
+  height: 240px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-end;
+}  
+
+.overlay 
+{
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  background-image: linear-gradient(to top, rgba(black, .8), rgba(black, 0));
+}
+.detail 
+{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.name 
+{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.bold 
+{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.button 
+{
+  border: 2px solid white;
+  padding: 8px;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.row 
+{
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #144D65;
+  border-bottom: 1px solid rgba(white, .2);
+  height: 84px;
+}
+.icon 
+{
+  font-size: 18px;
+  width: 72px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+.top 
+{
+  color: #FFEB3B;
+}
+
+.avatar 
+{
+  width: 32px;
+  height: 32px;
+  background-image: url("https://randomuser.me/api/portraits/men/29.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 32px;
+  box-shadow: inset 0 0 4px rgba(black, .8);
+  margin-right: 8px;
+}
+
+.name 
+{
+  font-size: 18px;
+  flex: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-right: 8px;
+  overflow: hidden;
+}
+
+.points 
+{
+  margin-right: 24px;
+  font-weight: bold;
+  white-space: nowrap;
+}
