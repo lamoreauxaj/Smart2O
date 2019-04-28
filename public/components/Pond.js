@@ -1,6 +1,9 @@
 export default{
     name: "Pond",
-    template: '<canvas id="pondCanvas"></canvas>',
+    template: `<div id="pondlayout">
+                <h1 id="pondscore">Score: 100</h1>
+                <canvas width="1400" height="500" id="pondCanvas"></canvas>
+            </div>`,
     data() {
         return {
             tadpoles: undefined,
@@ -8,14 +11,23 @@ export default{
         }
     },
     mounted() {
-        
-        const n = Math.floor(Math.random() * 250), v = 15, m = 10
+        const maxTadpoles = 250
+        const n = Math.floor(Math.random() * maxTadpoles), v = 15, m = 10
         const width = document.getElementById("pondCanvas").width
         const height = document.getElementById("pondCanvas").height
         this.context = document.getElementById("pondCanvas").getContext("2d")
         const context = this.context
         context.lineJoin = "round"
         context.lineCap = "round"
+        
+        var header = document.getElementById("pondscore");
+        header.innerHTML = "Score: " + String(n);
+        if(n >= Math.floor(maxTadpoles * .67))
+            header.style.color = "green"
+        else if(n >= Math.floor(maxTadpoles * .33))
+            header.style.color = "yellow"
+        else
+            header.style.color = "red"
         
         this.tadpoles = new Array(n).fill().map(() => ({
           vx: (Math.random() - 0.5) * v,
