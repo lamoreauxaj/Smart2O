@@ -52,6 +52,14 @@ body {
     text-align:center;
 }
 
+#gaugeRow {
+    margin-top: 20px;
+}
+
+.headerText {
+    text-align: center;
+}
+
 .contentContainer {
   width: calc(100% - 50px);
   margin: 0px 25px 0px 25px;
