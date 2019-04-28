@@ -15,7 +15,7 @@ export default {
           </li>
         <li
           class="navElement">
-            <router-link class="navLink" to="/footprint">Footprint</router-link>
+            <router-link class="navLink" to="/footprint">Goals</router-link>
           </li>
         <li
           class="navElement">

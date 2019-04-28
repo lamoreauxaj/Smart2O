@@ -23,14 +23,14 @@ export default {
           <h4>Use Less than 2000 Gallons of Water this Month</h4>
           <p> By developing energy saving habits, both water and money are saved! </p></div>
         </div>
-      <div class="card">
+        <div class="card">
           <div class="bg-img">
-            <img width=100%" src="https://cdn.shopify.com/s/files/1/1172/5864/files/17562081826_2fe31437e8_z_1_large.jpg"/>
+            <img width="100%" src="https://wateruseitwisely.com/wp-content/uploads/2014/08/low-flow-toilet.jpg"/>
           </div>
           <div class="content">
           <h4>Purchase a Low-Flow Toilet</h4>
           <p> Low-flow toilets can save people around 5,000 Gallons, eventually covering the cost of the purchase itself. </p></div>
-      </div>
+        </div>
     </Layout>
   `
 }
