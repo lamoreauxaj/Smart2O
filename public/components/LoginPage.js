@@ -8,7 +8,7 @@ export default {
         <source src="../assets/video.mp4" type="video/mp4">
       </video>
       <div id="loginForm">
-        <form @submit="onSubmit()" action="">
+        <form @submit="return onSubmit()" action="javascript:void(0)">
           <div class="loginTitle">
             <img src="../assets/pond.png"/>
             <h1>Smart2O</h1>
@@ -38,6 +38,12 @@ export default {
     onSubmit()
     {
       console.log("hi");
+      if(document.getElementById("username").value!="syedpervaiz")
+      {
+        alert("bad!");
+        location.reload();
+        return false;
+      }
       localStorage.setItem("username",document.getElementById("username").value);
       window.location.href = "http://localhost:3000/#/usage";
       return false;

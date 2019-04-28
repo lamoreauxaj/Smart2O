@@ -38,15 +38,37 @@ export default {
             left -= gauges[i];
         }
         gauges[4] = left;
-        
-        var gauge1 = loadLiquidFillGauge("fillgauge1", 62);
-        var gauge2 = loadLiquidFillGauge("fillgauge2", 12);
-        var gauge3 = loadLiquidFillGauge("fillgauge3", 21);
-        var gauge4 = loadLiquidFillGauge("fillgauge4", 3);
-        var gauge5 = loadLiquidFillGauge("fillgauge5", 12);
+        function getJSON(url, callback)
+        {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', url, true);
+            xhr.responseType = 'json';
+            xhr.onload = function() {
+              var status = xhr.status;
+              if (status === 200) {
+                callback(null, xhr.response);
+              } else {
+                callback(status, xhr.response);
+              }
+            };
+            xhr.send();
+        }
+        getJSON(localStorage.getItem("username")+"/wateruse",
+        function(err, data) {
+          if (err !== null) {
+            alert('Something went wrong: ' + err);
+          } else {
+            console.log(data);
+            var gauge1 = loadLiquidFillGauge("fillgauge1", parseInt(data.gallonsPercents.showers));
+            var gauge2 = loadLiquidFillGauge("fillgauge2", data.gallonsPercents.toilet);
+            var gauge3 = loadLiquidFillGauge("fillgauge3", data.gallonsPercents.faucets);
+            var gauge4 = loadLiquidFillGauge("fillgauge4", data.gallonsPercents.dishwashers);
+            var gauge5 = loadLiquidFillGauge("fillgauge5", data.gallonsPercents.other); 
+          }
+        });
         
         var randTotal = Math.floor(Math.random() * 1000);
-        document.getElementById("totalUseText").innerHTML = "Total Use: " + String(randTotal) + " G used this Month";
+        document.getElementById("totalUseText").innerHTML = "Total Use: " + 646 + " G used this Month";
         
         /*var dataset = [ 5, 10, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12];
         var months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
