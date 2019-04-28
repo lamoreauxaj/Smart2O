@@ -1,17 +1,9 @@
-import HelloWorld from './components/HelloWorld.js'
+import App from './components/App.js'
 
 let vue = new Vue({
   el: '#app',
-  components: { HelloWorld },
+  components: { App },
   template: `
-    <div>
-      <h1> {{ msg }}! </h1>
-      <HelloWorld></HelloWorld>
-    </div>
-  `,
-  data() {
-    return {
-      msg: 'Syed'
-    }
-  }
+    <App/>
+  `
 })
