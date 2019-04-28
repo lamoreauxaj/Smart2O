@@ -9,7 +9,10 @@ export default {
       </video>
       <div id="loginForm">
         <form action="">
-          <img src="https://www.edigitalagency.com.au/wp-content/uploads/square-payments-logo-png-transparent-background-horizontal.png"/>
+          <div class="loginTitle">
+            <img src="../assets/pond.png"/>
+            <h1>Smart2O</h1>
+          </div>
           <label>Username</label>
           <br>
           <input type="text" id="username">
